@@ -38,3 +38,12 @@ gsed -i '/^FTDILOCL.*/a FTDILOC = \$(shell mdfind -name ftdi.h | tail -n 1)' Mak
 make -f Makefile.macos
 cp infnoise /usr/local/bin
 ```
+
+## Terminal
+```sh
+brew tap homebrew/cask-fonts
+brew cask install font-source-code-pro
+brew cask install iterm2
+brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
