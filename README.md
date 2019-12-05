@@ -25,8 +25,7 @@ brew install p7zip
 brew install tree
 brew install mas
 brew install jq
-brew install bat
-brew install ccat
+brew install mdcat
 brew install htop
 brew install fping
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json
@@ -46,8 +45,6 @@ cp infnoise /usr/local/bin
 ## Terminal
 
 ```sh
-brew tap homebrew/cask-fonts
-brew cask install font-source-code-pro
 brew cask install iterm2
 brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
