@@ -101,3 +101,10 @@ echo "restrict default ignore" | sudo tee -a /etc/ntp.conf
 ```sh
 curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee -a /etc/hosts
 ```
+
+### Screensaver
+
+```sh
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+```
