@@ -87,3 +87,11 @@ sudo pkill -HUP socketfilterfw
 sudo scutil --set ComputerName MacBookPro
 sudo scutil --set LocalHostName MacBookPro
 ```
+
+### NTP
+
+```sh
+sudo systemsetup -setnetworktimeserver "time.euro.apple.com"
+sudo systemsetup -setusingnetworktime on
+echo "restrict default ignore" | sudo tee -a /etc/ntp.conf
+```
