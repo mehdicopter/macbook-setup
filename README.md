@@ -109,6 +109,39 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 ```
 
+## Applications
+
+```sh
+# Homebrew
+brew cask install dropbox
+brew cask install 1password 1password-cli
+brew cask install whatsapp
+brew cask install signal
+brew cask install spotify
+brew cask install android-file-transfer
+brew cask install android-messages
+brew cask install firefox
+brew cask install skype
+brew cask install keepingyouawake
+brew cask install nightowl
+brew cask install tunnelblick
+brew cask install flux
+brew cask install spectacle
+brew cask install cyberduck
+brew cask install appcleaner
+brew cask install slack
+brew cask install vlc
+brew cask install transmission
+brew cask install knockknock
+brew cask install lulu
+brew cask install oversight
+brew cask install reikey
+brew cask install do-not-disturb
+# Apple Store
+mas lucky tweetdeck
+mas lucky clocker
+```
+
 ## Sources
 
 <https://github.com/drduh/macOS-Security-and-Privacy-Guide>
@@ -130,3 +163,5 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 <https://github.com/MartinSeeler/iterm2-material-design>
 
 <https://github.com/sindresorhus/quick-look-plugins>
+
+<https://objective-see.com/products.html>
