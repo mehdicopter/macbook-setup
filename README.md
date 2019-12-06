@@ -95,3 +95,9 @@ sudo systemsetup -setnetworktimeserver "time.euro.apple.com"
 sudo systemsetup -setusingnetworktime on
 echo "restrict default ignore" | sudo tee -a /etc/ntp.conf
 ```
+
+### DNS
+
+```sh
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee -a /etc/hosts
+```
