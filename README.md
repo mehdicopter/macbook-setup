@@ -80,3 +80,10 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
 # Restart firewall
 sudo pkill -HUP socketfilterfw
 ```
+
+### Computer Name
+
+```sh
+sudo scutil --set ComputerName MacBookPro
+sudo scutil --set LocalHostName MacBookPro
+```
