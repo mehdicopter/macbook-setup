@@ -50,3 +50,12 @@ brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
+
+## Dotfiles
+
+```sh
+brew install twpayne/taps/chezmoi
+chezmoi init https://github.com/mehdicopter/dotfiles.git
+chezmoi apply
+chezmoi update
+```
