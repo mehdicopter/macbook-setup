@@ -59,3 +59,24 @@ chezmoi init https://github.com/mehdicopter/dotfiles.git
 chezmoi apply
 chezmoi update
 ```
+
+## System Configuration
+
+### Filevault/Firewall
+
+```sh
+# Enable Filevault for current user
+sudo fdesetup enable -user $USER
+# Enable firewall
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+# Turn log on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setloggingmode on
+# Stealth mode (do not respond to PING)
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+# Disabled allow signed built-in applications automatically
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
+# Disabled allow signed downloaded applications automatically
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp off
+# Restart firewall
+sudo pkill -HUP socketfilterfw
+```
