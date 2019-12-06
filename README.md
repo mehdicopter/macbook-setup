@@ -108,3 +108,25 @@ curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 ```
+
+## Sources
+
+<https://github.com/drduh/macOS-Security-and-Privacy-Guide>
+
+<https://github.com/mas-cli/mas>
+
+<https://github.com/moretension/duti>
+
+<https://github.com/feross/spoof>
+
+<https://virtualenvwrapper.readthedocs.io/en/latest/install.html>
+
+<https://github.com/0xmachos/mOSL>
+
+<https://github.com/ernw/hardening/blob/master/operating_system/osx/10.14/ERNW_Hardening_OS_X_Mojave.md>
+
+<https://github.com/twpayne/chezmoi/>
+
+<https://github.com/MartinSeeler/iterm2-material-design>
+
+<https://github.com/sindresorhus/quick-look-plugins>
