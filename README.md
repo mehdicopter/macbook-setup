@@ -29,6 +29,10 @@ brew install mdcat
 brew install htop
 brew install fping
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json
+brew install shellcheck
+brew install vault
+brew install consul-template
+brew install tflint
 ```
 
 ## Infnoise
@@ -137,9 +141,20 @@ brew cask install lulu
 brew cask install oversight
 brew cask install reikey
 brew cask install do-not-disturb
+brew cask install insomnia
+brew cask install the-unarchiver
 # Apple Store
 mas lucky tweetdeck
 mas lucky clocker
+```
+
+### Virtualization/Docker/Kubernetes
+
+```sh
+brew cask install virtualbox
+brew cask install vagrant
+brew install docker docker-machine docker-compose
+brew install kubernetes-helm kubectl minikube
 ```
 
 ## Sources
