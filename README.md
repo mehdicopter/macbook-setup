@@ -5,34 +5,104 @@ This is what I install on my MacBookPro.
 ## Prerequisites
 
 ```sh
-mkdir -p ~/{Github,Bitbucket,workspace}
+mkdir -p ~/{Github,Bitbucket}
 ```
 
 ## Homebrew
 
 ```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install git zsh gnupg
+```
+
+## First
+
+### Terminal
+
+```sh
+brew cask install iterm2
+brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+p10k configure
+```
+
+Customize `iTerm2` described [here](<https://github.com/MartinSeeler/iterm2-material-design>).
+
+### Python3
+
+```sh
+brew install python
+pip install -U pip
+pip install virtualenv virtualenvwrapper
+```
+
+### Mac App Store
+
+```sh
+brew install mas
+mas lucky clocker
+```
+
+### Password
+
+```sh
+brew 1password 1password-cli
+```
+
+## Google
+
+```sh
+brew cask install google-drive-file-stream google-chrome
+```
+
+### Google Cloud Platform
+
+```sh
+brew cask install google-cloud-sdk
+gcloud auth login
+gcloud components install kubectl
+```
+
+## GPG
+
+```sh
+brew install gnupg yubikey-personalization hopenpgp-tools ykman pinentry-mac
+```
+
+## Dotfiles
+
+```sh
+brew install twpayne/taps/chezmoi
+chezmoi init https://github.com/mehdicopter/dotfiles.git
+chezmoi apply
+chezmoi update
+```
+
+## Visual Studio Code
+
+```sh
+brew cask install visual-studio-code
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension ms-python.python
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension mauve.terraform
 ```
 
 ## Tools
 
 ```sh
-brew install git
 brew install gnu-sed
 brew install vim
 brew install screen
-brew install p7zip
 brew install tree
-brew install mas
 brew install jq
 brew install mdcat
 brew install htop
 brew install fping
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json
 brew install shellcheck
-brew install vault
-brew install consul-template
-brew install tflint
 ```
 
 ## Infnoise
@@ -46,23 +116,7 @@ make -f Makefile.macos
 cp infnoise /usr/local/bin
 ```
 
-## Terminal
 
-```sh
-brew cask install iterm2
-brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-```
-
-## Dotfiles
-
-```sh
-brew install twpayne/taps/chezmoi
-chezmoi init https://github.com/mehdicopter/dotfiles.git
-chezmoi apply
-chezmoi update
-```
 
 ## System Configuration
 
@@ -118,34 +172,18 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 ```sh
 # Homebrew
 brew cask install dropbox
-brew cask install 1password 1password-cli
 brew cask install whatsapp
 brew cask install signal
 brew cask install spotify
-brew cask install android-file-transfer
-brew cask install android-messages
-brew cask install firefox
 brew cask install skype
 brew cask install keepingyouawake
 brew cask install nightowl
-brew cask install tunnelblick
 brew cask install flux
-brew cask install spectacle
-brew cask install cyberduck
 brew cask install appcleaner
 brew cask install slack
 brew cask install vlc
-brew cask install transmission
-brew cask install knockknock
-brew cask install lulu
-brew cask install oversight
-brew cask install reikey
-brew cask install do-not-disturb
 brew cask install insomnia
 brew cask install the-unarchiver
-# Apple Store
-mas lucky tweetdeck
-mas lucky clocker
 ```
 
 ### Virtualization/Docker/Kubernetes
@@ -154,6 +192,9 @@ mas lucky clocker
 brew cask install virtualbox
 brew cask install vagrant
 brew install docker docker-machine docker-compose
+docker-machine create --driver virtualbox default
+
+
 brew install kubernetes-helm kubectl minikube
 ```
 
@@ -166,8 +207,6 @@ brew install kubernetes-helm kubectl minikube
 <https://github.com/moretension/duti>
 
 <https://github.com/feross/spoof>
-
-<https://virtualenvwrapper.readthedocs.io/en/latest/install.html>
 
 <https://github.com/0xmachos/mOSL>
 
