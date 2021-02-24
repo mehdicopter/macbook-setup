@@ -3,6 +3,8 @@ HOMEBREW 			:= $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 PYTHON_VERSION 		:= 3.8
 PYTHON_PIP_BIN_PATH := ~/Library/Python/$(PYTHON_VERSION)/bin
 
+bootstrap: get_homebrew get_python_pip install_virtualenv
+
 get_homebrew:
 	$(SHELL) -c "$(HOMEBREW)"
 
