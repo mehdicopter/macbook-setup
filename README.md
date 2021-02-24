@@ -16,3 +16,14 @@ git clone https://github.com/mehdicopter/macbook-setup && cd macbook-setup
 export PATH=~/Library/Python/bin/3.8/bin:$PATH
 make bootstrap
 ```
+
+## Ansible
+
+```sh
+export WORKON_HOME=$HOME/.venv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source virtualenvwrapper.sh
+workon
+mkvirtualenv ansible
+make ansible
+```
