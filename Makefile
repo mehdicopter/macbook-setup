@@ -23,4 +23,4 @@ install_ansible:
 	ansible-galaxy install -r requirements.yml
 
 play_ansible:
-	ansible-playbook -v main.yml --ask-become-pass
+	ansible-playbook -v main.yml -i hosts --ask-become-pass
