@@ -15,3 +15,12 @@ get_python_pip:
 
 install_virtualenv:
 	pip3 install --user virtualenv virtualenvwrapper
+
+ansible: install_ansible play_ansible
+
+install_ansible:
+	pip3 install -r ansible-requirements.txt
+	ansible-galaxy install -r requirements.yml
+
+play_ansible:
+	ansible-playbook -v main.yml --ask-become-pass
