@@ -57,11 +57,20 @@ brew install --cask iterm2
 
 1. Download [Material Design color scheme](<https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors>).
 2. _iTerm2 > Preferences > Profiles > Colors Tab_
-3. Click _Color Presets_
-4. Click _Import_
+3. Click _Color Presets..._
+4. Click _Import..._
 5. Select the `material-design-colors.itermcolors` file
-6. Select the _material-design-colors_ from _Load Presets_
+6. Select now the _material-design-colors_
 
 ```sh
 curl --output ~/Downloads/material-design-colors.itermcolors https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
+```
+
+### Powerlevel10k
+
+```sh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+brew install gnu-sed
+gsed -ri 's#(^ZSH_THEME=)(\"robbyrussell\")#\1\"powerlevel10k/powerlevel10k\"#g' ~/.zshrc
+source ~/.zshrc
 ```
