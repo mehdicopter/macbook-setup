@@ -1,5 +1,6 @@
 SHELL 				:= /bin/bash
 HOMEBREW 			:= $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+OHMYZSH 			:= $$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
 
 bootstrap: get_homebrew get_python_pip install_virtualenv
 
@@ -14,3 +15,6 @@ get_python_pip:
 
 install_virtualenv:
 	python3 -m pip install --user virtualenv virtualenvwrapper
+
+ohmyzsh:
+	@test -d $(HOME)/.oh-my-zsh && echo "Oh-my-zsh already exists." || $(SHELL) -c "$(OHMYZSH)"
