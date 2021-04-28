@@ -1,0 +1,65 @@
+---
+ansible_python_interpreter: /usr/bin/python3
+homebrew_user: mehdi
+homebrew_group: staff
+homebrew_installed_packages:
+  - chezmoi
+  - docker
+  - docker-machine
+  - docker-compose
+  - figlet
+  - gnu-sed
+  - gnupg
+  - golang
+  - helm
+  - helm@2
+  - hopenpgp-tools
+  - jq
+  - pinentry-mac
+  - screen
+  - terraform@0.13
+  - terragrunt
+  - tig
+  - tree
+  - yarn
+  - ykman
+  - yubikey-personalization
+  - zsh
+  - zsh-completions
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+homebrew_cask_apps:
+  - 1password
+  - discord
+  - flux
+  - google-chrome
+  - google-cloud-sdk
+  - google-drive
+  - iterm2
+  - keepingyouawake
+  - signal
+  - skype
+  - slack
+  - spotify
+  - tableplus
+  - tor-browser
+  - transmission
+  - visual-studio-code
+  - vlc
+  - whatsapp
+homebrew_cask_uninstalled_apps:
+  - vscodium
+users:
+  - username: mehdi
+    visual_studio_code_extensions:
+      - wayou.vscode-todo-highlight
+      - vscode-icons-team.vscode-icons
+      - DavidAnson.vscode-markdownlint
+      - HashiCorp.terraform
+      - esbenp.prettier-vscode
+      - bierner.markdown-emoji
+      - redhat.vscode-yaml
+      - ms-kubernetes-tools.vscode-kubernetes-tools
+      - ms-python.python
+      - MS-vsliveshare.vsliveshare-pack
+      - lunarlimbo.banner-comments-plus

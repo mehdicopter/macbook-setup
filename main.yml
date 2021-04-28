@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  connection: local
+  pre_tasks:
+    - name: Create VScode symlink
+      ansible.builtin.file:
+        src: ~/.vscode-oss
+        dest: ~/.vscode
+        owner: mehdi
+        state: link
+  roles:
+    - role: geerlingguy.homebrew
+      become: yes
+      tags: [homebrew, brew]
+    - role: gantsign.visual-studio-code-extensions
+      tags: [vscode]
+  post_tasks:
+    - name: Install Powerlevel10k
+      ansible.builtin.git:
+        repo: https://github.com/romkatv/powerlevel10k.git
+        dest: "{{ ansible_env.HOME}}/.oh-my-zsh/custom/themes/powerlevel10k"
