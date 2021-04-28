@@ -4,7 +4,7 @@ HOMEBREW 			:= $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 bootstrap: get_homebrew get_python_pip install_virtualenv
 
 get_homebrew:
-	$(SHELL) -c "$(HOMEBREW)"
+	@test -f /usr/local/bin/brew && echo "Homebrew is already installed." || $(SHELL) -c "$(HOMEBREW)"
 
 get_python_pip:
 	curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
