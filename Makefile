@@ -2,7 +2,7 @@ SHELL 				:= /bin/bash
 HOMEBREW 			:= $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 OHMYZSH 			:= $$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
 
-bootstrap: get_homebrew get_python_pip install_virtualenv
+bootstrap: get_homebrew get_python_pip install_virtualenv ohmyzsh
 
 get_homebrew:
 	@test -f /usr/local/bin/brew && echo "Homebrew is already installed." || $(SHELL) -c "$(HOMEBREW)"
