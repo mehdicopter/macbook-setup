@@ -9,3 +9,6 @@ get_python_pip:
 	python3 get-pip.py
 	rm -f get-pip.py
 	python3 -m pip install --upgrade --user pip
+
+install_virtualenv:
+	python3 -m pip install --user virtualenv virtualenvwrapper
