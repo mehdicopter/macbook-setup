@@ -6,6 +6,7 @@ Setup a MacBook Pro on Big Sur.
 
 - [Prerequisites](#prerequisites)
 - [Bootstrap](#bootstrap)
+- [iTerm2](#iterm2)
 
 ## Prerequisites
 
@@ -40,4 +41,27 @@ make get_homebrew
 make get_python_pip
 make install_virtualenv
 make ohmyzsh
+```
+
+## iTerm2
+
+### Installation
+
+Open `Terminal`.
+
+```sh
+brew install --cask iterm2
+```
+
+### Configuration
+
+1. Download [Material Design color scheme](<https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors>).
+2. _iTerm2 > Preferences > Profiles > Colors Tab_
+3. Click _Color Presets_
+4. Click _Import_
+5. Select the `material-design-colors.itermcolors` file
+6. Select the _material-design-colors_ from _Load Presets_
+
+```sh
+curl --output ~/Downloads/material-design-colors.itermcolors https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
 ```
