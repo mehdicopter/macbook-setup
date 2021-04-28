@@ -1,6 +1,8 @@
 SHELL 				:= /bin/bash
 HOMEBREW 			:= $$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 
+bootstrap: get_homebrew get_python_pip install_virtualenv
+
 get_homebrew:
 	$(SHELL) -c "$(HOMEBREW)"
 
