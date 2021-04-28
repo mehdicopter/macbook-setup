@@ -1,6 +1,6 @@
 # Mac OS X Setup
 
-This is what I install on my MacBookPro.
+Setup a MacBook Pro on Big Sur.
 
 ## Prerequisites
 
