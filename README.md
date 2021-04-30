@@ -105,3 +105,19 @@ make install_ansible
 ```sh
 ansible-playbook -v main.yml -i hosts --ask-become-pass
 ```
+
+## Google SDK
+
+### Installation
+
+```sh
+brew install --cask google-cloud-sdk
+```
+
+> **_NOTE_**: The installation has already been done by running the Ansible playbook.
+
+### Components
+
+```sh
+gcloud components install kubectl
+```
