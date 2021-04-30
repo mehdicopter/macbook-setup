@@ -74,3 +74,10 @@ brew install gnu-sed
 gsed -ri 's#(^ZSH_THEME=)(\"robbyrussell\")#\1\"powerlevel10k/powerlevel10k\"#g' ~/.zshrc
 source ~/.zshrc
 ```
+
+### Dotfiles
+
+```sh
+brew install chezmoi
+chezmoi init --apply mehdicopter
+```
