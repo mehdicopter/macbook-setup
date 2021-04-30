@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - role: geerlingguy.homebrew
+      become: yes
+      tags: [homebrew, brew]
