@@ -7,6 +7,9 @@ Setup a MacBook Pro on Big Sur.
 - [Prerequisites](#prerequisites)
 - [Bootstrap](#bootstrap)
 - [iTerm2](#iterm2)
+- [Ansible](#ansible)
+- [Google Cloud SDK](#google-cloud-sdk)
+- [Visual Studio Code](#visual-studio-code)
 
 ## Prerequisites
 
@@ -106,7 +109,7 @@ make install_ansible
 ansible-playbook -v main.yml -i hosts --ask-become-pass
 ```
 
-## Google SDK
+## Google Cloud SDK
 
 ### Installation
 
@@ -120,4 +123,32 @@ brew install --cask google-cloud-sdk
 
 ```sh
 gcloud components install kubectl
+```
+
+## Visual Studio Code
+
+### Installation
+
+```sh
+brew install --cask visual-studio-code
+```
+
+> **_NOTE_**: The installation has already been done by running the Ansible playbook.
+
+### Extensions
+
+- [wayou.vscode-todo-highlight](<https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight>)
+- [vscode-icons-team.vscode-icons](<https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons>)
+- [DavidAnson.vscode-markdownlint](<https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint>)
+- [HashiCorp.terraform](<https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform>)
+- [esbenp.prettier-vscode](<https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>)
+- [bierner.markdown-emoji](<https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji>)
+- [redhat.vscode-yaml](<https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>)
+- [ms-kubernetes-tools.vscode-kubernetes-tools](<https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools>)
+- [ms-python.python](<https://marketplace.visualstudio.com/items?itemName=ms-python.python>)
+- [MS-vsliveshare.vsliveshare-pack](<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack>)
+- [lunarlimbo.banner-comments-plus](<https://marketplace.visualstudio.com/items?itemName=lunarlimbo.banner-comments-plus>)
+
+```sh
+code --install-extension <EXTENSION_ID>
 ```
