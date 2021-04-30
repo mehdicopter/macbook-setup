@@ -81,3 +81,27 @@ source ~/.zshrc
 brew install chezmoi
 chezmoi init --apply mehdicopter
 ```
+
+## Ansible
+
+### Prerequisites
+
+```sh
+export WORKON_HOME=$HOME/.venv
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source virtualenvwrapper.sh
+workon
+mkvirtualenv ansible
+```
+
+### Installation
+
+```sh
+make install_ansible
+```
+
+### Usage
+
+```sh
+ansible-playbook -v main.yml -i hosts --ask-become-pass
+```
