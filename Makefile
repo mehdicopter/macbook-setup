@@ -18,3 +18,7 @@ install_virtualenv:
 
 ohmyzsh:
 	@test -d $(HOME)/.oh-my-zsh && echo "Oh-my-zsh already exists." || $(SHELL) -c "$(OHMYZSH)"
+
+install_ansible:
+	python3 -m pip install -r ansible-requirements.txt
+	ansible-galaxy install -r requirements.yml
