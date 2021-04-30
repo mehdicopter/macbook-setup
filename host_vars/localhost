@@ -1,0 +1,37 @@
+---
+ansible_python_interpreter: /usr/bin/python3
+homebrew_user: mehdim
+homebrew_group: staff
+homebrew_installed_packages:
+  - chezmoi
+  - figlet
+  - gnu-sed
+  - gnupg
+  - golang
+  - helm
+  - hopenpgp-tools
+  - jq
+  - pinentry-mac
+  - screen
+  - tig
+  - tree
+  - ykman
+  - yubikey-personalization
+  - zsh
+  - zsh-completions
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+homebrew_cask_apps:
+  - 1password
+  - flux
+  - google-cloud-sdk
+  - google-drive
+  - iterm2
+  - keepingyouawake
+  - signal
+  - slack
+  - spotify
+  - transmission
+  - visual-studio-code
+  - vlc
+  - whatsapp
