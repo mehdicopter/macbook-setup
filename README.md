@@ -148,6 +148,7 @@ brew install --cask visual-studio-code
 - [ms-python.python](<https://marketplace.visualstudio.com/items?itemName=ms-python.python>)
 - [MS-vsliveshare.vsliveshare-pack](<https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack>)
 - [lunarlimbo.banner-comments-plus](<https://marketplace.visualstudio.com/items?itemName=lunarlimbo.banner-comments-plus>)
+- [secanis.jenkinsfile-support](<https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support>)
 
 ```sh
 code --install-extension <EXTENSION_ID>
