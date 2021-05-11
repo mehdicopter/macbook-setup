@@ -4,13 +4,17 @@ homebrew_user: mehdim
 homebrew_group: staff
 homebrew_installed_packages:
   - chezmoi
+  - exiftool
   - figlet
   - gnu-sed
   - gnupg
   - golang
+  - gpgme
   - helm
   - hopenpgp-tools
   - jq
+  - libftdi
+  - libusb
   - pinentry-mac
   - screen
   - tig
@@ -32,6 +36,7 @@ homebrew_cask_apps:
   - slack
   - spotify
   - transmission
+  - tunnelblick
   - visual-studio-code
   - vlc
   - whatsapp

@@ -152,3 +152,17 @@ brew install --cask visual-studio-code
 ```sh
 code --install-extension <EXTENSION_ID>
 ```
+
+## Yubikey
+
+### Infnoise
+
+```sh
+brew install libftdi libusb
+cd Github && git clone https://github.com/13-37-org/infnoise.git
+cd infnoise/software
+gsed -i '/^FTDILOCL.*/a FTDILOC = \$(shell mdfind -name ftdi.h | tail -n 1)' Makefile.macos
+make -f Makefile.macos
+cp infnoise /usr/local/bin
+sudo infnoise > /dev/random
+```
