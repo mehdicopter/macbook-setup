@@ -150,6 +150,8 @@ brew install --cask visual-studio-code
 - [lunarlimbo.banner-comments-plus](<https://marketplace.visualstudio.com/items?itemName=lunarlimbo.banner-comments-plus>)
 - [secanis.jenkinsfile-support](<https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support>)
 - [hediet.vscode-drawio](<https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio>)
+- [zhuangtongfa.Material-theme](<https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme>)
+- [golang.go](<https://marketplace.visualstudio.com/items?itemName=golang.go>)
 
 ```sh
 code --install-extension <EXTENSION_ID>
