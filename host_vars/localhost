@@ -3,9 +3,11 @@ ansible_python_interpreter: /usr/bin/python3
 homebrew_user: mehdim
 homebrew_group: staff
 homebrew_installed_packages:
+  - bash
   - chezmoi
   - exiftool
   - figlet
+  - fzf
   - gnu-sed
   - gnupg
   - golang
@@ -35,6 +37,7 @@ homebrew_cask_apps:
   - signal
   - slack
   - spotify
+  - tableplus
   - transmission
   - tunnelblick
   - visual-studio-code
