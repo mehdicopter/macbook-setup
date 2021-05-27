@@ -166,3 +166,12 @@ make -f Makefile.macos
 cp infnoise /usr/local/bin
 sudo infnoise > /dev/random
 ```
+
+## Virtualization
+
+### Docker
+
+```sh
+brew install --cask virtualbox
+brew install docker docker-machine
+```

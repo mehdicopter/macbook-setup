@@ -5,6 +5,8 @@ homebrew_group: staff
 homebrew_installed_packages:
   - bash
   - chezmoi
+  - docker
+  - docker-machine
   - exiftool
   - figlet
   - fzf
@@ -40,6 +42,7 @@ homebrew_cask_apps:
   - tableplus
   - transmission
   - tunnelblick
+  - virtualbox
   - visual-studio-code
   - vlc
   - whatsapp
